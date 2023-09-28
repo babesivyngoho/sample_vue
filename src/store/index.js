@@ -44,8 +44,8 @@ export default createStore({
 
             var res = await login(user)
             console.log(res)
-            /*
-            console.log(res.permissions)
+            
+            //console.log(res.permissions)
             if (res.status == 'success'){
                 //Temp token
                 localStorage.setItem("access_token", "temp_token")
@@ -60,12 +60,14 @@ export default createStore({
                 const serializedObj = JSON.stringify(obj);
                 localStorage.setItem("permissions", serializedObj)
                 commit('setAuthentication', true)
-                window.location.replace("/home")
+                //window.location.replace("/home")
+                window.location.replace("/dashboard")
+
             }
             else {
                 return res.message
             }
-            */
+            /*
 
             if (res.status == 'success'){
                 localStorage.setItem("access_token", "temp_token")
@@ -78,6 +80,7 @@ export default createStore({
             }else {
                 return res.message
             }
+            */
         },
         logoutUser({commit}) {
             localStorage.removeItem("access_token")
