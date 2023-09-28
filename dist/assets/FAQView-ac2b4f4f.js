@@ -1,0 +1,1 @@
+import{_ as e,o as t,c,a as s}from"./index-47a93c9c.js";const o={},n={class:"text-center"},_=s("h3",null,"FAQ View",-1),a=[_];function r(i,d){return t(),c("div",n,a)}const f=e(o,[["render",r]]);export{f as default};
